@@ -1,0 +1,47 @@
+<body style="background-color: #666666;">
+  <div class="limiter">
+    <div class="container-login100">
+      <div class="wrap-login100">
+        <div class="login-page">
+          <span class="login100-form-title p-b-43">Login to continue</span>
+          <br>
+          <div class="form">
+
+
+            <form class="register-form" action="/signup" method="post">
+
+              <input type="text" name="username" class="form-control" id="registerusername-input" value="" placeholder="Username" />
+              <input type="email" name="email" class="form-control" id="registeremail-input" value="" placeholder="Email Address" />
+              <input type="password" name="password" class="form-control" id="password-input" value="" placeholder="Password" />
+              
+              <button type="submit">create</button>
+
+              <p class="message">Already registered? <a>Sign In</a></p>
+
+            </form>
+
+
+            <form class="login-form" action="/login" method="post">
+            
+              <input type="text" name="username" id="loginusername-input" placeholder="Username"/>
+              <input type="password" name="password" class="form-control" id="loginpassword-input" placeholder="Password" />
+              <a href="./kitchens"><button type="login">login</button></a>
+              <p class="message">Not registered? <a>Create an account</a></p>
+            </form>
+
+          </div>
+        </div>
+        <div class="login100-more" style="background-image: url('./assets/img/bg-01.jpg');">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    $('.message a').click(function(){
+    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+    });
+  </script>
+
+</body>
